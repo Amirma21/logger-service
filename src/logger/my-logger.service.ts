@@ -13,14 +13,6 @@ export class MyLoggerService implements LoggerService {
     logger.error(message, { context, trace });
   }
 
-  debug(message: any, ...optionalParams: any[]): any {
-    logger.error(message, { optionalParams });
-  }
-
-  fatal(message: any, ...optionalParams: any[]): any {
-    logger.error(message, { optionalParams });
-  }
-
   warn(message: any, ...optionalParams: any[]): any {
     logger.error(message, { optionalParams });
   }

@@ -13,7 +13,7 @@ export class NotesService {
   async create(createNoteDto: any): Promise<Note> {
     const createdNote = new this.noteModel(createNoteDto);
 
-    this.logger.error('Your log message LINE 16');
+    this.logger.error('LOG 5  :)))))');
 
     return createdNote.save();
   }
