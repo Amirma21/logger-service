@@ -1,4 +1,4 @@
-import { Injectable, Logger } from '@nestjs/common';
+import { Injectable, Logger } from "@nestjs/common";
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Note, NoteDocument } from './notes.model';
@@ -16,9 +16,5 @@ export class NotesService {
     this.logger.error('LOG 5  :)))))');
 
     return createdNote.save();
-  }
-
-  async findAll(): Promise<Note[]> {
-    return this.noteModel.find().exec();
   }
 }
